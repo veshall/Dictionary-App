@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { BookOpenIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import ThemeMenu from "./settings/ThemeMenu";
-import FontMenu from "./settings/FontMenu";
+import DarkMode from "./appSettings/DarkMode";
+import FontMenu from "./appSettings/FontMenu";
 import axios from "axios";
 
 export default function SearchBar({ setData }) {
@@ -34,23 +34,19 @@ export default function SearchBar({ setData }) {
         <BookOpenIcon className="h-8 w-8 text-gray-600 stroke-violet-700 stroke-1" />
         <div className="flex items-center justify-center">
           <FontMenu />
-          <ThemeMenu />
+          <DarkMode />
         </div>
       </header>
 
       <form onSubmit={wordHandler} className="relative">
         <input
           type="text"
-          // value={text}
           ref={textRef}
-          // onChange={(e) => {
-          //   setText(e.target.value);
-          // }}
-          className="bg-slate-200 w-full h-10 rounded-lg px-4 outline-none"
+          className="bg-slate-200/70 lg:text-xl backdrop-blur-sm dark:text-gray-200 dark:bg-slate-200/10 w-full h-14 rounded-lg px-4 outline-none"
           placeholder="type keyword. . ."
         ></input>
         <button>
-          <MagnifyingGlassIcon className=" absolute top-2 right-3 h-6 w-6 text-gray-600 stroke-violet-700 stroke-1" />
+          <MagnifyingGlassIcon className=" absolute top-4 right-4 h-6 w-6 text-gray-600 stroke-violet-700 stroke-1" />
         </button>
       </form>
     </>

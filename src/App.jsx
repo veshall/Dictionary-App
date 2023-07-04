@@ -1,10 +1,11 @@
 import React from "react";
 import HomePage from "./components/HomePage";
-import DetailPage from "./components/DetailPage";
+import Background from "./components/Background";
 
 export default function App() {
   return (
     <>
+      <Background />
       <HomePage />
     </>
   );

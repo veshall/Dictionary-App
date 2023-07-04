@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 
-export default function ThemeMenu() {
+export default function DarkMode() {
   const [darkMode, setDarkMode] = useState(undefined);
 
   const switchMode = () => {
