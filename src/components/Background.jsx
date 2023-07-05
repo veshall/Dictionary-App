@@ -1,7 +1,7 @@
 import React from "react";
 import desktopSvg from "../assets/AnimatedShapeDesktop.svg";
 import tabletSvg from "../assets/AnimatedShapeTablet.svg";
-import phoneSvg from "../assets/AnimatedShapephone.svg";
+import phoneSvg from "../assets/AnimatedShapePhone.svg";
 
 export default function Background() {
   return (
