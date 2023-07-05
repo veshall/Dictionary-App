@@ -17,8 +17,7 @@ Check packages.json for details
 
 # Todos
 1. Audio repeat bug
-2. Error Handling
-3. dark mode
-4. enhance design
+2. Error Handling(because I'm lazy)
+3. enhance the design
 
 Thank You 😉
